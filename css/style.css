@@ -1,23 +1,16 @@
-*{
-    font-family: sans-serif;
+.dropdown-hover .dropdown-toggle:hover + .dropdown-menu {
+    display: block;
 }
 
-.header{
-    box-shadow: 0 5px 5px #9b2121;
+.navbar-brand img {
+    max-height: 120px;
+    max-width: auto;
 }
 
-.header img{
-    width: 200px;
-}
-
-.header li{
-    list-style-type: none;
-    text-transform: uppercase;
-}
-
-.header a{
-    color: #9b2121;
-    text-decoration: none;
+.navbar-nav .nav-link {
+    margin-left: 10px;
+    color: #9b2121 !important;
+    box-shadow: 0 2px 4px #9b2121;
 }
 
 /*--> main <--*/
