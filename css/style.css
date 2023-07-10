@@ -150,7 +150,30 @@ h2 {
 
 /*--> carrito <--*/
 
+.carrito a p {
+    margin: 15px;
+}
 
+.p-vacio {
+    display: flex;
+    color: #616161;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.seguircomprando {
+    text-decoration: none;
+}
+
+.seguir-comprando {
+    text-align: center;
+    width: fit-content;
+    margin: 10px auto 250px auto;
+    padding: 5px;
+    border-radius: 7px;
+    color: #ffffff;
+    background-color: #9b2121;
+}
 
 /*--> contacto <--*/
 
