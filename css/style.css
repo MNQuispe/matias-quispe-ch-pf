@@ -1,4 +1,4 @@
-.dropdown-hover .dropdown-toggle:hover + .dropdown-menu {
+.dropdown-hover .dropdown-toggle:hover+.dropdown-menu {
     display: block;
 }
 
@@ -14,112 +14,182 @@
 }
 
 /*--> main <--*/
+/*--> index <--*/
 
-.main img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.main h1{
+h1 {
     text-align: center;
     background-color: #9b2121;
     color: #ffffff;
-    text-transform: uppercase;
-    background-clip: content-box;
+    padding: 5px;
+    margin-top: 30px;
 }
 
-.main img:not(:first-child) {
-    width: 200px;
-    display: inline-block;
-}
-
-.main h2 {
+.h2 {
     text-align: center;
     background-color: #9b2121;
-    text-transform: uppercase;
-    background-clip: content-box;
-    padding: 10px;
+    color: #ffffff;
+    padding: 5px;
 }
 
-.main h2 a {
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #9b2121;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.main h3 {
+    text-align: center;
+    background-color: #9b2121;
+    color: #ffffff;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.marcas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcas img {
+    max-width: 10%;
+    height: auto;
+    margin-left: 10px;
+}
+
+.main h4 {
+    text-align: center;
+    background-color: #9b2121;
+    color: #ffffff;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/*--> productos <--*/
+
+h2 {
+    text-align: center;
+    background-color: #9b2121;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #9b2121;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/*--> arma tu pc <--*/
+
+.armado {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px 20px 10px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px #9b2121;
+}
+
+.component {
+    margin: 10px;
+}
+.component h3 {
+    display: inline-block;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.component select {
+    display: flex;
+    margin-left: 5px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 12px;
+}
+
+/*--> carrito <--*/
+
+
+
+/*--> footer <--*/
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-column {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer-column h5 {
+    color: #9b2121;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column ul li a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.main h3{
+.social-icons {
+    display: flex;
+}
+
+.footer-bottom {
+    margin-top: 20px;
     text-align: center;
-    background-color: #9b2121;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-clip: content-box;
-}
-  
-h2{
-    font-size: 24px;
-    text-align: center;
-    color: #ffffff;
-    margin: 20px 0;
-}
-  
-.producto{
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px #9b2121;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-  
-.producto h3{
-    font-size: 20px;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-  
-.producto .description{
-    color: #666;
-    margin-bottom: 15px;
-}
-  
-.producto .precio{
-    font-size: 18px;
-    font-weight: bold;
-    color: #009688;
-}
-  
-.product img{
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 15px;
-}
-
-.main {
-    text-align: center;
-  }
-
-.main h4{
-    color: #009688;
-    font-size: 20px;
-}
-  
-.main p{
-    color: #666;
-    font-size: 16px;
-}
-
-/*--> footer <--*/
-
-.footer{
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.footer ul{
-    list-style-type: none;
-}
-
-.footer p{
-    text-align: center;
+    font-size: 12px;
 }
