@@ -59,6 +59,15 @@ h1 {
     margin-bottom: 10px;
 }
 
+.product:hover {
+    border: 1px solid #9b2121;
+    transform: scale(1.05);
+}
+
+.product:active {
+    transform: scale(.9);
+}
+
 .main h3 {
     text-align: center;
     background-color: #9b2121;
@@ -113,6 +122,15 @@ h2 {
     height: auto;
     margin-bottom: 10px;
     border-radius: 10px;
+}
+
+.producto:hover {
+    border: 1px solid #9b2121;
+    transform: scale(1.05);
+}
+
+.producto:active {
+    transform: scale(.9);
 }
 
 /*--> arma tu pc <--*/
@@ -220,6 +238,7 @@ footer {
     background-color: #000000;
     color: #ffffff;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .footer-container {
