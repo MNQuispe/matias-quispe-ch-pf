@@ -1,0 +1,31 @@
+/*--> arma tu pc <--*/
+.armado {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px 20px 10px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px #9b2121;
+}
+
+.component {
+    margin: 10px;
+}
+
+.component h3 {
+    display: inline-block;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.component select {
+    display: flex;
+    margin-left: 5px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 12px;
+}

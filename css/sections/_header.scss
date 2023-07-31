@@ -1,0 +1,14 @@
+.dropdown-hover .dropdown-toggle:hover+.dropdown-menu {
+    display: block;
+}
+
+.navbar-brand img {
+    max-height: 120px;
+    max-width: auto;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 10px;
+    color: #9b2121 !important;
+    box-shadow: 0 2px 4px #9b2121;
+}
