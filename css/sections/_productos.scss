@@ -26,3 +26,27 @@
 .producto:active {
     transform: scale(.9);
 }
+
+.precio{
+    color: #008000;
+}
+
+@media (min-width: 768px) {
+    .container-product {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "product1 product2"
+          "product3 product4";
+      }
+      
+      .product1 { grid-area: product1; }
+      
+      .product2 { grid-area: product2; }
+      
+      .product3 { grid-area: product3; }
+      
+      .product4 { grid-area: product4; }
+      
+}
