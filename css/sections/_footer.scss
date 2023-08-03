@@ -9,6 +9,7 @@ footer {
 
 .footer-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-column {
@@ -40,4 +41,11 @@ footer {
     margin-top: 20px;
     text-align: center;
     font-size: 12px;
+}
+
+@media (min-width: 768px){
+    .footer-container{
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }

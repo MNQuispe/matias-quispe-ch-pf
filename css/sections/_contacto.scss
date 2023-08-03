@@ -1,19 +1,20 @@
 /*--> contacto <--*/
-.contact {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 10px 20px 10px;
-}
 
-.container-contact-h6 {
-    display: flex;
-    justify-content: space-around;
-}
-
-.container-contact-p {
-    display: flex;
-    justify-content: space-around;
-}
+.contact {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "mail tel wpp";
+    margin: 20px;
+    justify-items: center;
+  }
+  
+  .mail { grid-area: mail; }
+  
+  .wpp { grid-area: wpp; }
+  
+  .tel { grid-area: tel; }
 
 .maps {
     display: flex;
@@ -21,17 +22,16 @@
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 10px 20px 10px;
-}
-
-.container-info-h6 {
-    display: flex;
-    justify-content: space-around;
-}
-
-.container-info-p {
-    display: flex;
-    justify-content: space-around;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "ubi Horario";
+    margin: 20px;
+    justify-items: center;
+  }
+  
+  .ubi { grid-area: ubi; }
+  
+  .Horario { grid-area: Horario; }
+  

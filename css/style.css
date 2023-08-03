@@ -13,49 +13,6 @@
   box-shadow: 0 2px 4px #9b2121;
 }
 
-/*--> footer <--*/
-footer {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-.footer-container {
-  display: flex;
-}
-
-.footer-column {
-  flex: 1 1 250px;
-  margin-bottom: 20px;
-}
-
-.footer-column h5 {
-  color: #9b2121;
-  margin-bottom: 10px;
-}
-
-.footer-column ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-column ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.social-icons {
-  display: flex;
-}
-
-.footer-bottom {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 12px;
-}
-
 /*--> index <--*/
 h1 {
   text-align: center;
@@ -137,6 +94,11 @@ h1 {
   margin-top: 10px;
 }
 
+@media (max-width: 424px) {
+  .marcas img {
+    margin-left: 5px;
+  }
+}
 /*--> productos <--*/
 .producto {
   display: flex;
@@ -225,29 +187,97 @@ h1 {
   background-color: #9b2121;
 }
 
-/*--> carrito <--*/
-.carrito a p {
-  margin: 15px;
+/*--> contacto <--*/
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "mail tel wpp";
+  margin: 20px;
+  justify-items: center;
 }
 
-.p-vacio {
+.mail {
+  grid-area: mail;
+}
+
+.wpp {
+  grid-area: wpp;
+}
+
+.tel {
+  grid-area: tel;
+}
+
+.maps {
   display: flex;
-  color: #616161;
-  justify-content: space-evenly;
-  margin: 50px;
+  justify-content: space-around;
 }
 
-.seguircomprando {
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "ubi Horario";
+  margin: 20px;
+  justify-items: center;
+}
+
+.ubi {
+  grid-area: ubi;
+}
+
+.Horario {
+  grid-area: Horario;
+}
+
+/*--> footer <--*/
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+  margin-bottom: 20px;
+}
+
+.footer-column h5 {
+  color: #9b2121;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  color: #ffffff;
   text-decoration: none;
 }
 
-.seguir-comprando {
+.social-icons {
+  display: flex;
+}
+
+.footer-bottom {
+  margin-top: 20px;
   text-align: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 10px auto 250px auto;
-  padding: 5px;
-  border-radius: 7px;
-  color: #ffffff;
-  background-color: #9b2121;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }/*# sourceMappingURL=style.css.map */
