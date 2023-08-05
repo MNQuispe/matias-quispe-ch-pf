@@ -1,6 +1,55 @@
 /*--> contacto <--*/
 
-.contact {  
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "mail"
+    "wpp"
+    "tel";
+  margin: 10px;
+  padding: 10px;
+}
+
+.mail {
+  grid-area: mail;
+}
+
+.wpp {
+  grid-area: wpp;
+}
+
+.tel {
+  grid-area: tel;
+}
+
+.maps {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "ubi"
+    "Horario";
+  margin: 10px;
+  padding: 10px;
+}
+
+.ubi {
+  grid-area: ubi;
+}
+
+.Horario {
+  grid-area: Horario;
+}
+
+@media (min-width: 768px) {
+  .contact {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -9,19 +58,21 @@
     margin: 20px;
     justify-items: center;
   }
-  
-  .mail { grid-area: mail; }
-  
-  .wpp { grid-area: wpp; }
-  
-  .tel { grid-area: tel; }
 
-.maps {
-    display: flex;
-    justify-content: space-around;
-}
+  .mail {
+    grid-area: mail;
+  }
 
-.info {
+  .wpp {
+    grid-area: wpp;
+  }
+
+  .tel {
+    grid-area: tel;
+  }
+
+
+  .info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -30,8 +81,12 @@
     margin: 20px;
     justify-items: center;
   }
-  
-  .ubi { grid-area: ubi; }
-  
-  .Horario { grid-area: Horario; }
-  
+
+  .ubi {
+    grid-area: ubi;
+  }
+
+  .Horario {
+    grid-area: Horario;
+  }
+}
